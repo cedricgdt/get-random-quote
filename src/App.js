@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import GenerateQuote from './GenerateQuote';
 import DisplayQuote from './DisplayQuote';
@@ -34,9 +33,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-         <GenerateQuote selectQuote={() =>  this.getQuote()}/>
-         <br></br>
+          <GenerateQuote selectQuote={() =>  this.getQuote()}/>
+          <br></br>
           <DisplayQuote  quote={this.state.quote}/>
         </header>
       </div>
